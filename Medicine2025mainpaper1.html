@@ -1,0 +1,739 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RUHS MBBS Part-II Gen Medicine Paper I (Jan 2025)</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            color: #2c3e50;
+        }
+        .section-header {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        .question-block {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .main-q-title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            border-bottom: 2px solid #ecf0f1;
+            padding-bottom: 10px;
+        }
+        .sub-question {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #e0e0e0;
+        }
+        .sub-question:last-child {
+            border-bottom: none;
+        }
+        .q-text {
+            font-weight: 600;
+            margin-bottom: 8px;
+            display: block;
+        }
+        .marks-badge {
+            background-color: #e8f4fd;
+            color: #2980b9;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-size: 0.8em;
+            font-weight: bold;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+        .options {
+            margin-left: 20px;
+            margin-bottom: 10px;
+            font-size: 0.95em;
+            color: #555;
+        }
+        .btn-show {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 5px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85em;
+            transition: background-color 0.2s;
+            margin-top: 5px;
+        }
+        .btn-show:hover {
+            background-color: #2980b9;
+        }
+        .answer-box {
+            display: none;
+            margin-top: 10px;
+            padding: 12px;
+            background-color: #f0f9f4; /* Light green tint */
+            border-left: 4px solid #27ae60;
+            border-radius: 4px;
+            font-size: 0.95em;
+        }
+        .answer-content {
+            white-space: pre-wrap;
+        }
+        /* Table styling for differences */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>RUHS General Medicine Paper-I (Jan 2025)</h1>
+
+    <h2 class="section-header">Section-A</h2>
+
+    <div class="question-block">
+        <div class="main-q-title">1. Fill in the blanks (6 x 1 = 06 Marks)</div>
+
+        <div class="sub-question">
+            <span class="q-text">a) Greenish blue sputum in a patient with pneumonia is associated with ........................ infection.</span>
+            <button class="btn-show" onclick="toggleAnswer('ans1a', this)">Show Answer</button>
+            <div id="ans1a" class="answer-box">
+                <strong>Answer: Pseudomonas aeruginosa</strong><br>
+                <em>Note:</em> The pigment pyocyanin gives the characteristic greenish-blue color.
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">b) The diuretic of choice for management of ascites in chronic liver disease is ........................</span>
+            <button class="btn-show" onclick="toggleAnswer('ans1b', this)">Show Answer</button>
+            <div id="ans1b" class="answer-box">
+                <strong>Answer: Spironolactone</strong><br>
+                <em>Note:</em> An aldosterone antagonist is preferred to counteract secondary hyperaldosteronism.
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">c) Heinz bodies are classically seen in hemolysis due to ........................ deficiency.</span>
+            <button class="btn-show" onclick="toggleAnswer('ans1c', this)">Show Answer</button>
+            <div id="ans1c" class="answer-box">
+                <strong>Answer: Glucose-6-Phosphate Dehydrogenase (G6PD)</strong><br>
+                <em>Note:</em> Oxidative stress causes hemoglobin precipitation (Heinz bodies).
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">d) Vertebral arteries join to form the ........................ artery.</span>
+            <button class="btn-show" onclick="toggleAnswer('ans1d', this)">Show Answer</button>
+            <div id="ans1d" class="answer-box">
+                <strong>Answer: Basilar</strong><br>
+                <em>Note:</em> They merge at the pontomedullary junction.
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">e) For patients with hypertrophic cardiomyopathy (HCM) who have symptoms that limit quality of life, the initial drug of choice is ........................</span>
+            <button class="btn-show" onclick="toggleAnswer('ans1e', this)">Show Answer</button>
+            <div id="ans1e" class="answer-box">
+                <strong>Answer: Beta-blockers</strong><br>
+                <em>Note:</em> e.g., Metoprolol or Atenolol. They reduce heart rate and outflow tract obstruction.
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">f) The antigen associated anti-neutrophil cytoplasmic antibodies (cANCA) vasculitis is ........................</span>
+            <button class="btn-show" onclick="toggleAnswer('ans1f', this)">Show Answer</button>
+            <div id="ans1f" class="answer-box">
+                <strong>Answer: Proteinase 3 (PR3)</strong><br>
+                <em>Note:</em> Highly specific for Granulomatosis with Polyangiitis (Wegener's).
+            </div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="main-q-title">2. Answer the following MCQs (4 x 1 = 04 Marks)</div>
+
+        <div class="sub-question">
+            <span class="q-text">i. Monogenic diabetes-maturity onset diabetes of the young (MODY) is characterized by all of the following EXCEPT:</span>
+            <div class="options">
+                a) Diabetes diagnosed at a young age (&lt;25 years)<br>
+                b) Is insulin requiring<br>
+                c) Autosomal dominant transmission<br>
+                d) Lack of autoantibodies
+            </div>
+            <button class="btn-show" onclick="toggleAnswer('ans2i', this)">Show Answer</button>
+            <div id="ans2i" class="answer-box">
+                <strong>Answer: (b) Is insulin requiring</strong><br>
+                <em>Reasoning:</em> MODY patients often have residual insulin secretion and can frequently be managed with oral agents (sulfonylureas) for many years, unlike Type 1 diabetes.
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">ii. Microcytic hypochromic anaemia is seen in:</span>
+            <div class="options">
+                a) Phenytoin toxicity<br>
+                b) Paroxysmal nocturnal haemoglobinuria<br>
+                c) Lead poisoning<br>
+                d) Haemolytic anaemia
+            </div>
+            <button class="btn-show" onclick="toggleAnswer('ans2ii', this)">Show Answer</button>
+            <div id="ans2ii" class="answer-box">
+                <strong>Answer: (c) Lead poisoning</strong><br>
+                <em>Reasoning:</em> Lead inhibits heme synthesis enzymes (ALA dehydratase), leading to microcytic anemia with basophilic stippling. Phenytoin causes macrocytic anemia.
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">iii. Which of the following monoclonal antibodies is used to treat osteoporosis in chronic kidney disease (CKD) patients:</span>
+            <div class="options">
+                a) Denosumab<br>
+                b) Tocilizumab<br>
+                c) Rituximab<br>
+                d) Infliximab
+            </div>
+            <button class="btn-show" onclick="toggleAnswer('ans2iii', this)">Show Answer</button>
+            <div id="ans2iii" class="answer-box">
+                <strong>Answer: (a) Denosumab</strong><br>
+                <em>Reasoning:</em> Denosumab (RANKL inhibitor) is not cleared by the kidneys, making it a safe option for osteoporosis in advanced CKD where bisphosphonates are contraindicated.
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">iv. Psittacosis is associated with which of the following pets:</span>
+            <div class="options">
+                a) Sheep<br>
+                b) Hamster<br>
+                c) Rabbit<br>
+                d) Parrot
+            </div>
+            <button class="btn-show" onclick="toggleAnswer('ans2iv', this)">Show Answer</button>
+            <div id="ans2iv" class="answer-box">
+                <strong>Answer: (d) Parrot</strong><br>
+                <em>Reasoning:</em> Psittacosis (Parrot fever) is caused by <em>Chlamydia psittaci</em>, transmitted via infected bird droppings.
+            </div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="main-q-title">3. Case Study (5 x 3 = 15 Marks)</div>
+        <div style="background:#f9f9f9; padding:10px; border-left:4px solid #34495e; margin-bottom:15px; font-style:italic;">
+            Case: A 22 year old female presented with history of smoky urine and reduced urine output. There was history of sore throat 10 days prior to admission. Examination of urine revealed 1+ protein and microscopic haematuria. Her serum creatinine at admission was 2.4 mg/dl.
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">a) What is the differential diagnosis?</span>
+            <button class="btn-show" onclick="toggleAnswer('ans3a', this)">Show Answer</button>
+            <div id="ans3a" class="answer-box">
+                <strong>Differential Diagnosis:</strong><br>
+                1. <strong>Acute Post-Streptococcal Glomerulonephritis (PSGN):</strong> Most likely due to "smoky urine" (hematuria), oliguria, and the classic 10-day latent period following a sore throat.<br>
+                2. <strong>IgA Nephropathy:</strong> A strong differential, though usually presents <em>simultaneously</em> (synpharyngitic) with the infection rather than after a delay.<br>
+                3. <strong>Lupus Nephritis (SLE):</strong> Possible given the patient is a young female, though other systemic signs (rash, arthritis) would typically be present.<br>
+                4. <strong>Membranoproliferative Glomerulonephritis (MPGN).</strong>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">b) Name salient investigations you would like to send to confirm the diagnosis.</span>
+            <button class="btn-show" onclick="toggleAnswer('ans3b', this)">Show Answer</button>
+            <div id="ans3b" class="answer-box">
+                <strong>Salient Investigations:</strong><br>
+                1. <strong>ASO Titer (Anti-Streptolysin O):</strong> To document recent streptococcal infection.<br>
+                2. <strong>Complement Levels (C3 and C4):</strong> In PSGN, C3 is typically low while C4 is normal. C3 usually normalizes within 8 weeks.<br>
+                3. <strong>Urinalysis & Microscopy:</strong> Looking for RBC casts (pathognomonic for glomerular bleeding) and dysmorphic RBCs.<br>
+                4. <strong>Renal Function Test:</strong> To monitor Creatinine (currently 2.4 mg/dl) and Urea.<br>
+                5. <strong>ANA / dsDNA:</strong> To rule out Lupus Nephritis.<br>
+                6. <strong>Throat Swab Culture:</strong> To check for carrier state of Group A Streptococcus.
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">c) How will you differentiate between glomerular haematuria from non-glomerular haematuria?</span>
+            <button class="btn-show" onclick="toggleAnswer('ans3c', this)">Show Answer</button>
+            <div id="ans3c" class="answer-box">
+                Differentiation is primarily done via <strong>Phase-Contrast Microscopy</strong> of urine:<br><br>
+                <strong>Glomerular Haematuria:</strong>
+                <ul>
+                    <li><strong>RBC Morphology:</strong> Dysmorphic RBCs (distorted/fragmented due to passage through GBM).</li>
+                    <li><strong>Casts:</strong> Presence of RBC casts (Hallmark).</li>
+                    <li><strong>Color:</strong> Cola-colored, tea-colored, or smoky brown.</li>
+                    <li><strong>Proteinuria:</strong> Often significant (>500mg/day).</li>
+                </ul>
+                <strong>Non-Glomerular Haematuria:</strong>
+                <ul>
+                    <li><strong>RBC Morphology:</strong> Isomorphic RBCs (normal, uniform shape).</li>
+                    <li><strong>Casts:</strong> Absent.</li>
+                    <li><strong>Color:</strong> Bright red or pink.</li>
+                    <li><strong>Clots:</strong> Presence of clots suggests lower tract source (e.g., bladder).</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">d) What are the expected histopathology findings in kidney biopsy in this condition?</span>
+            <button class="btn-show" onclick="toggleAnswer('ans3d', this)">Show Answer</button>
+            <div id="ans3d" class="answer-box">
+                Biopsy is usually not needed for typical PSGN, but if performed:<br>
+                1. <strong>Light Microscopy:</strong> Diffuse proliferative glomerulonephritis. Glomeruli are enlarged, hypercellular (mesangial/endothelial proliferation) with neutrophil infiltration.<br>
+                2. <strong>Immunofluorescence:</strong> "Starry Sky" appearance with granular deposits of <strong>IgG and C3</strong> along the capillary walls and mesangium.<br>
+                3. <strong>Electron Microscopy:</strong> The hallmark finding is subepithelial electron-dense deposits known as <strong>"Humps"</strong> (camel-hump appearance).
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">e) How will you treat the condition?</span>
+            <button class="btn-show" onclick="toggleAnswer('ans3e', this)">Show Answer</button>
+            <div id="ans3e" class="answer-box">
+                Management is primarily supportive as PSGN is self-limiting:<br>
+                1. <strong>Antibiotics:</strong> Penicillin (or Erythromycin) to eradicate residual streptococcal infection and prevent spread.<br>
+                2. <strong>Fluid Restriction:</strong> Essential to manage oliguria and prevent pulmonary edema.<br>
+                3. <strong>Sodium Restriction:</strong> To control edema and hypertension.<br>
+                4. <strong>Diuretics:</strong> Loop diuretics (e.g., Furosemide) are first-line for edema and hypertension control.<br>
+                5. <strong>Antihypertensives:</strong> Calcium channel blockers or vasodilators if BP remains high. ACE inhibitors are used with caution due to hyperkalemia risk in acute renal failure.<br>
+                6. <strong>Dialysis:</strong> Rarely needed, only if life-threatening hyperkalemia or fluid overload unresponsive to meds occurs.
+            </div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="main-q-title">4. Write briefly on (Any Five) (5 x 2 = 10 Marks)</div>
+
+        <div class="sub-question">
+            <span class="q-text">a) Diagnosis and treatment of non-alcoholic steatohepatitis (NASH).</span>
+            <button class="btn-show" onclick="toggleAnswer('ans4a', this)">Show Answer</button>
+            <div id="ans4a" class="answer-box">
+                <strong>Diagnosis:</strong>
+                <ul>
+                    <li>Diagnosis of exclusion: Must exclude alcohol consumption and other liver diseases (Viral, Autoimmune).</li>
+                    <li><strong>Imaging:</strong> USG/FibroScan shows fatty liver (steatosis).</li>
+                    <li><strong>Biopsy (Gold Standard):</strong> Shows steatosis + hepatocyte ballooning + lobular inflammation.</li>
+                    <li><strong>Labs:</strong> Mild elevation of ALT/AST (often ALT > AST).</li>
+                </ul>
+                <strong>Treatment:</strong>
+                <ul>
+                    <li><strong>Lifestyle:</strong> Weight loss (7-10%) is the cornerstone therapy.</li>
+                    <li><strong>Pharmacotherapy:</strong> Vitamin E (for non-diabetics) and Pioglitazone are mainstays. Newer GLP-1 agonists (Semaglutide) show promise.</li>
+                    <li>Control comorbidities (Diabetes, Dyslipidemia).</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">b) Peripheral blood smear in anemia.</span>
+            <button class="btn-show" onclick="toggleAnswer('ans4b', this)">Show Answer</button>
+            <div id="ans4b" class="answer-box">
+                Peripheral Blood Smear (PBS) is a critical diagnostic tool:
+                <ul>
+                    <li><strong>Microcytic Hypochromic:</strong> Suggests Iron Deficiency (pencil cells), Thalassemia (target cells), or Sideroblastic anemia.</li>
+                    <li><strong>Macrocytic:</strong> Suggests B12/Folate deficiency (Macro-ovalocytes, Hypersegmented neutrophils).</li>
+                    <li><strong>Normocytic:</strong> Anemia of chronic disease, acute blood loss.</li>
+                    <li><strong>Specific findings:</strong>
+                        <ul>
+                            <li><em>Spherocytes:</em> Hereditary spherocytosis or Autoimmune hemolysis.</li>
+                            <li><em>Schistocytes (Fragmented cells):</em> MAHA, DIC, TTP.</li>
+                            <li><em>Sickle Cells:</em> Sickle cell anemia.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">c) Diagnosis of IE (Infective Endocarditis).</span>
+            <button class="btn-show" onclick="toggleAnswer('ans4c', this)">Show Answer</button>
+            <div id="ans4c" class="answer-box">
+                Diagnosis is based on the <strong>Modified Duke Criteria</strong>:
+                <br><strong>Definite IE:</strong> 2 Major OR 1 Major + 3 Minor OR 5 Minor.
+                <ul>
+                    <li><strong>Major Criteria:</strong>
+                        1. Positive Blood Cultures (Typical organism from 2 separate cultures).<br>
+                        2. Evidence of Endocardial Involvement (Echo showing vegetation, abscess, or new regurgitation).
+                    </li>
+                    <li><strong>Minor Criteria:</strong> Predisposition (heart condition/IV drug use), Fever >38°C, Vascular phenomena (emboli), Immunologic phenomena (Osler nodes, Roth spots), Microbiological evidence not meeting major.</li>
+                </ul>
+                <strong>TEE (Transesophageal Echo)</strong> is more sensitive than TTE.
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">d) Hyperparathyroidism: investigation and management.</span>
+            <button class="btn-show" onclick="toggleAnswer('ans4d', this)">Show Answer</button>
+            <div id="ans4d" class="answer-box">
+                <strong>Investigations:</strong>
+                <ul>
+                    <li><strong>Biochemical Hallmark:</strong> High Serum Calcium + High (or non-suppressed) PTH.</li>
+                    <li><strong>Other Labs:</strong> Low Phosphate, High Alkaline Phosphatase, High 24hr urinary calcium.</li>
+                    <li><strong>Localization:</strong> Sestamibi Parathyroid Scan and Neck Ultrasound to locate the adenoma.</li>
+                </ul>
+                <strong>Management:</strong>
+                <ul>
+                    <li><strong>Surgery (Parathyroidectomy):</strong> Curative treatment of choice for symptomatic patients.</li>
+                    <li><strong>Medical:</strong> For non-surgical candidates. Cinacalcet (calcimimetic) to lower calcium/PTH. Bisphosphonates for bone protection. Hydration to prevent stones.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">e) Causes of secondary hypertension and discuss briefly investigations to confirm diagnosis.</span>
+            <button class="btn-show" onclick="toggleAnswer('ans4e', this)">Show Answer</button>
+            <div id="ans4e" class="answer-box">
+                Suspect in young patients (<30) or resistant HTN.
+                <ul>
+                    <li><strong>Renal Parenchymal Disease:</strong> Most common cause. Investigate with Urinalysis, Creatinine, USG KUB.</li>
+                    <li><strong>Renovascular HTN (Renal Artery Stenosis):</strong> Renal Doppler USG, CT Angiography.</li>
+                    <li><strong>Primary Hyperaldosteronism (Conn's):</strong> Plasma Aldosterone/Renin Ratio (ARR).</li>
+                    <li><strong>Pheochromocytoma:</strong> Plasma free metanephrines or 24hr urinary metanephrines.</li>
+                    <li><strong>Cushing's Syndrome:</strong> Dexamethasone suppression test, 24hr urinary cortisol.</li>
+                    <li><strong>Coarctation of Aorta:</strong> Echo, arm-leg BP difference.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">f) Newer antidiabetic drugs.</span>
+            <button class="btn-show" onclick="toggleAnswer('ans4f', this)">Show Answer</button>
+            <div id="ans4f" class="answer-box">
+                Focus on drugs with CV/Renal benefits:
+                <ol>
+                    <li><strong>SGLT-2 Inhibitors (Gliflozins - e.g., Dapagliflozin):</strong> Block renal glucose reabsorption causing glycosuria.
+                        <br><em>Benefits:</em> Weight loss, BP reduction, reduces Heart Failure risk & slows CKD.</li>
+                    <li><strong>GLP-1 Receptor Agonists (e.g., Semaglutide, Liraglutide):</strong> Incretin mimetics (Injectable/Oral).
+                        <br><em>Benefits:</em> Strong weight loss, cardiovascular protection, low hypoglycemia risk.</li>
+                    <li><strong>DPP-4 Inhibitors (Gliptins):</strong> Weight neutral, well-tolerated oral agents.</li>
+                    <li><strong>Tirzepatide:</strong> Dual GIP/GLP-1 agonist, potent for weight loss and glycemic control.</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="main-q-title">5. Explain why (Any Three) (3 x 5 = 15 Marks)</div>
+
+        <div class="sub-question">
+            <span class="q-text">a) Pathophysiology of paroxysmal nocturnal dyspnoea.</span>
+            <button class="btn-show" onclick="toggleAnswer('ans5a', this)">Show Answer</button>
+            <div id="ans5a" class="answer-box">
+                PND is sudden breathlessness waking a patient from sleep, specific for Left Heart Failure.
+                <br><strong>Mechanism:</strong>
+                1. <strong>Fluid Redistribution:</strong> Edema fluid from legs is reabsorbed when lying flat, increasing venous return (preload).<br>
+                2. <strong>Left Ventricular Failure:</strong> The weak LV cannot pump this extra volume, causing backup of pressure into the lungs.<br>
+                3. <strong>Pulmonary Congestion:</strong> Interstitial pulmonary edema develops, increasing work of breathing.<br>
+                4. <strong>Respiratory Center:</strong> During sleep, the brain is less sensitive to mild signals; fluid accumulates until a threshold is reached, causing sudden waking with "air hunger."
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">b) Mechanism of action of glucagon-like peptide-1 receptor agonists (GLP-1 RAs).</span>
+            <button class="btn-show" onclick="toggleAnswer('ans5b', this)">Show Answer</button>
+            <div id="ans5b" class="answer-box">
+                GLP-1 RAs (e.g., Liraglutide) mimic the endogenous incretin hormone GLP-1.
+                <br><strong>Actions:</strong>
+                1. <strong>Insulin Secretion:</strong> Stimulates beta-cells to release insulin in a <em>glucose-dependent</em> manner (works only when sugar is high, so low hypo risk).<br>
+                2. <strong>Glucagon Suppression:</strong> Inhibits alpha-cells, reducing hepatic glucose production.<br>
+                3. <strong>Gastric Emptying:</strong> Slows stomach emptying, reducing post-meal glucose spikes.<br>
+                4. <strong>Central Effect:</strong> Acts on the hypothalamus to increase satiety, leading to weight loss.
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">c) Cyanosis.</span>
+            <button class="btn-show" onclick="toggleAnswer('ans5c', this)">Show Answer</button>
+            <div id="ans5c" class="answer-box">
+                Cyanosis is the bluish discoloration of skin/mucosa.
+                <br><strong>Pathophysiology:</strong>
+                It occurs when the absolute concentration of <strong>reduced (deoxygenated) hemoglobin exceeds 5 g/dL</strong> in the capillary blood.
+                <br><strong>Implication:</strong> Anemic patients (low total Hb) may never show cyanosis even if severely hypoxic because they don't have enough Hb to reach the 5g/dL threshold. Conversely, polycythemic patients may look cyanotic with only mild hypoxia.
+                <br><strong>Types:</strong>
+                * <em>Central:</em> Arterial desaturation (Lips/Tongue) - e.g., Shunts, Lung disease.
+                * <em>Peripheral:</em> Slow blood flow/high extraction (Fingers) - e.g., Cold, Shock.
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">d) Diabetic nephropathy.</span>
+            <button class="btn-show" onclick="toggleAnswer('ans5d', this)">Show Answer</button>
+            <div id="ans5d" class="answer-box">
+                <strong>Pathophysiology:</strong>
+                1. <strong>Hyperglycemia:</strong> Formation of AGEs (Advanced Glycation End-products) causes oxidative stress.<br>
+                2. <strong>Hemodynamic Changes (Hyperfiltration):</strong> Afferent arteriole dilation increases intraglomerular pressure. This mechanical stress damages the filter.<br>
+                3. <strong>Structural Damage:</strong>
+                   * GBM Thickening.
+                   * Mesangial expansion (Kimmelstiel-Wilson nodules).
+                   * Podocyte loss leads to <strong>Albuminuria</strong> (earliest sign).<br>
+                4. <strong>Progression:</strong> Leads to glomerulosclerosis and tubulointerstitial fibrosis, resulting in GFR decline.
+            </div>
+        </div>
+    </div>
+
+    <h2 class="section-header">Section-B</h2>
+
+    <div class="question-block">
+        <div class="main-q-title">6. Long Answer Question (20 Marks)</div>
+        <div class="sub-question">
+            <span class="q-text">Discuss the clinical features of inflammatory bowel disease. Differentiating features of Idiopathic ulcerative colitis (IUC) and Crohn's disease. Discuss the diagnostic tools to confirm the diagnosis. List the salient therapeutic options for the management of IUC.</span>
+            <button class="btn-show" onclick="toggleAnswer('ans6', this)">Show Answer</button>
+            <div id="ans6" class="answer-box">
+                <strong>1. Clinical Features of IBD:</strong>
+                <ul>
+                    <li><strong>Diarrhea:</strong> Chronic. Bloody with mucus in UC; variable in Crohn's.</li>
+                    <li><strong>Abdominal Pain:</strong> Crampy. LLQ in UC (relieved by defecation); RLQ in Crohn's.</li>
+                    <li><strong>Systemic:</strong> Fever, weight loss (marked in Crohn's), fatigue.</li>
+                    <li><strong>Extraintestinal:</strong> Arthritis, Uveitis, Erythema Nodosum, PSC (with UC).</li>
+                </ul>
+
+                <strong>2. Differences (UC vs Crohn's):</strong>
+                <table>
+                    <tr>
+                        <th>Feature</th>
+                        <th>Ulcerative Colitis (UC)</th>
+                        <th>Crohn's Disease (CD)</th>
+                    </tr>
+                    <tr>
+                        <td><strong>Extent</strong></td>
+                        <td>Continuous, starts at rectum. Colon only.</td>
+                        <td>Skip lesions. Mouth to Anus (Ileum common).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Depth</strong></td>
+                        <td>Mucosal (Superficial).</td>
+                        <td>Transmural (Full thickness).</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Histology</strong></td>
+                        <td>Crypt abscesses. No granulomas.</td>
+                        <td><strong>Non-caseating Granulomas.</strong></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Complications</strong></td>
+                        <td>Toxic megacolon, Cancer risk high.</td>
+                        <td>Fistulas, Strictures, Abscesses.</td>
+                    </tr>
+                </table>
+
+                <strong>3. Diagnostic Tools:</strong>
+                <ul>
+                    <li><strong>Colonoscopy + Biopsy:</strong> Gold standard.
+                        <br><em>UC:</em> Continuous inflammation, loss of vascular pattern.
+                        <br><em>Crohn's:</em> Cobblestone appearance, deep linear ulcers.</li>
+                    <li><strong>Imaging (CT/MRI Enterography):</strong> Essential in Crohn's to see small bowel and fistulas.</li>
+                    <li><strong>Stool Markers:</strong> Fecal Calprotectin (distinguishes IBD from IBS).</li>
+                    <li><strong>Serology:</strong> p-ANCA (UC), ASCA (Crohn's).</li>
+                </ul>
+
+                <strong>4. Therapeutic Options for IUC:</strong>
+                <ul>
+                    <li><strong>5-ASAs (Mesalamine):</strong> 1st line for mild-moderate disease (Oral/Rectal).</li>
+                    <li><strong>Corticosteroids:</strong> For inducing remission in acute flares (Oral Prednisolone/IV Hydrocortisone). NOT for maintenance.</li>
+                    <li><strong>Immunomodulators:</strong> Azathioprine/6-MP for maintenance.</li>
+                    <li><strong>Biologics:</strong> Anti-TNF (Infliximab, Adalimumab), Anti-Integrin (Vedolizumab), JAK inhibitors (Tofacitinib) for moderate-severe refractory disease.</li>
+                    <li><strong>Surgery:</strong> Colectomy is curative.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="main-q-title">7. Write briefly on (Any Five) (5 x 2 = 10 Marks)</div>
+
+        <div class="sub-question">
+            <span class="q-text">a) Treatment of paroxysmal supraventricular tachycardia (PSVT).</span>
+            <button class="btn-show" onclick="toggleAnswer('ans7a', this)">Show Answer</button>
+            <div id="ans7a" class="answer-box">
+                <strong>Acute Management:</strong>
+                <ul>
+                    <li><strong>Unstable:</strong> Synchronized DC Cardioversion.</li>
+                    <li><strong>Stable:</strong>
+                        1. <strong>Vagal Maneuvers:</strong> Carotid massage/Valsalva (First line).<br>
+                        2. <strong>Adenosine:</strong> 6mg rapid IV bolus -> 12mg if no response. Causes transient AV block.<br>
+                        3. <strong>Ca-Channel Blockers/Beta-blockers:</strong> Verapamil/Diltiazem if Adenosine fails.
+                    </li>
+                </ul>
+                <strong>Definitive:</strong> Radiofrequency Ablation (RFA).
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">b) Management of hyperkalemia.</span>
+            <button class="btn-show" onclick="toggleAnswer('ans7b', this)">Show Answer</button>
+            <div id="ans7b" class="answer-box">
+                Emergency:
+                <ol>
+                    <li><strong>Membrane Stabilization (Protect Heart):</strong> IV Calcium Gluconate (Immediate if EKG changes present).</li>
+                    <li><strong>Shift K+ into Cells (Temporizing):</strong> Insulin + Dextrose, Salbutamol Nebulization.</li>
+                    <li><strong>Removal (Definitive):</strong> Loop Diuretics (Furosemide), K+ Binders (Kayexalate/Patiromer), Dialysis (if refractory).</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">c) Cluster headache.</span>
+            <button class="btn-show" onclick="toggleAnswer('ans7c', this)">Show Answer</button>
+            <div id="ans7c" class="answer-box">
+                <strong>Features:</strong> Severe, unilateral periorbital pain occurring in "clusters" (weeks). Associated with ipsilateral autonomic symptoms (tearing, runny nose, Horner's syndrome). Patient is restless/agitated.
+                <br><strong>Treatment:</strong>
+                <ul>
+                    <li><em>Abortive:</em> 100% Oxygen (High flow) & Sumatriptan (SC).</li>
+                    <li><em>Prophylaxis:</em> Verapamil (Drug of choice).</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">d) Management of variceal bleed.</span>
+            <button class="btn-show" onclick="toggleAnswer('ans7d', this)">Show Answer</button>
+            <div id="ans7d" class="answer-box">
+                Medical Emergency (Cirrhosis):
+                <ol>
+                    <li><strong>Resuscitation:</strong> ABCs, 2 large bore IVs. Restrictive transfusion strategy (Hb target 7-8).</li>
+                    <li><strong>Drugs:</strong> Vasoactive agents (Terlipressin/Octreotide) started immediately + Antibiotics (Ceftriaxone).</li>
+                    <li><strong>Endoscopy:</strong> Variceal Band Ligation (EVL) within 12 hours.</li>
+                    <li><strong>Rescue:</strong> TIPS (Transjugular Intrahepatic Portosystemic Shunt) if bleeding continues.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">e) Indication of ordering antinuclear antibodies (ANA) and Interpretation of ANA.</span>
+            <button class="btn-show" onclick="toggleAnswer('ans7e', this)">Show Answer</button>
+            <div id="ans7e" class="answer-box">
+                <strong>Indication:</strong> Screening for Connective Tissue Diseases (SLE, Scleroderma) when symptoms exist (rash, arthritis, photosensitivity).
+                <br><strong>Interpretation:</strong>
+                <ul>
+                    <li>Reported as Titer (amount) and Pattern.</li>
+                    <li><strong>Titer:</strong> >1:160 is significant. Low titers (1:40) seen in healthy people.</li>
+                    <li><strong>Patterns:</strong>
+                        <br>- <em>Homogeneous:</em> SLE, Drug-induced lupus.
+                        <br>- <em>Speckled:</em> SLE, Sjögren's.
+                        <br>- <em>Centromere:</em> CREST syndrome.
+                    </li>
+                    <li>Positive ANA requires follow-up with specific antibodies (anti-dsDNA, anti-Smith).</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">f) AIDS defining illness.</span>
+            <button class="btn-show" onclick="toggleAnswer('ans7f', this)">Show Answer</button>
+            <div id="ans7f" class="answer-box">
+                Conditions marking progression to Stage 3 HIV (usually CD4 < 200).
+                <br><strong>Examples:</strong>
+                <ul>
+                    <li><em>Infections:</em> Pneumocystis Pneumonia (PCP), Esophageal Candidiasis, Toxoplasmosis (Brain), Cryptococcal Meningitis, TB (extrapulmonary).</li>
+                    <li><em>Malignancies:</em> Kaposi Sarcoma, Invasive Cervical Cancer, Non-Hodgkin Lymphoma.</li>
+                    <li><em>Other:</em> HIV Wasting Syndrome.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="question-block">
+        <div class="main-q-title">8. Write short notes on (4 x 5 = 20 Marks)</div>
+
+        <div class="sub-question">
+            <span class="q-text">a) How will you communicate with a bereaved individual? How will you break the news to him/her?</span>
+            <button class="btn-show" onclick="toggleAnswer('ans8a', this)">Show Answer</button>
+            <div id="ans8a" class="answer-box">
+                Use the <strong>SPIKES Protocol</strong>:
+                <ol>
+                    <li><strong>Setting:</strong> Private, quiet area. Sit down.</li>
+                    <li><strong>Perception:</strong> Ask what they already know.</li>
+                    <li><strong>Invitation:</strong> Ask how much detail they want.</li>
+                    <li><strong>Knowledge:</strong> Deliver news gently but directly ("I'm afraid I have bad news..."). Avoid jargon.</li>
+                    <li><strong>Empathy:</strong> Validate emotions. Allow silence. ("I can see this is difficult").</li>
+                    <li><strong>Strategy:</strong> Discuss next steps and support.</li>
+                </ol>
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">b) Approach to a patient with arthritis.</span>
+            <button class="btn-show" onclick="toggleAnswer('ans8b', this)">Show Answer</button>
+            <div id="ans8b" class="answer-box">
+                <strong>1. History:</strong>
+                * <em>Inflammatory vs Non-inflammatory:</em> Morning stiffness >30mins = Inflammatory (RA). Worse with activity = Non-inflammatory (OA).
+                * <em>Pattern:</em> Mono (Gout/Septic) vs Poly (RA/SLE). Symm vs Asymm.
+                <strong>2. Exam:</strong> Swelling, warmth, deformity (Swan neck), ROM.
+                <strong>3. Investigations:</strong>
+                * <em>Joint Fluid Analysis:</em> Crucial for monoarthritis (Crystals/Infection).
+                * <em>Labs:</em> RF, Anti-CCP, ESR, Uric Acid.
+                * <em>X-ray:</em> Erosions (RA) vs Osteophytes (OA).
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">c) Complications of bronchiectasis.</span>
+            <button class="btn-show" onclick="toggleAnswer('ans8c', this)">Show Answer</button>
+            <div id="ans8c" class="answer-box">
+                1. <strong>Recurrent Pneumonia:</strong> Frequent infections (Pseudomonas).<br>
+                2. <strong>Massive Hemoptysis:</strong> Erosion of bronchial arteries.<br>
+                3. <strong>Respiratory Failure:</strong> Chronic hypoxia & hypercapnia.<br>
+                4. <strong>Cor Pulmonale:</strong> Right heart failure due to pulmonary hypertension.<br>
+                5. <strong>Metastatic Abscess:</strong> Brain abscess.<br>
+                6. <strong>Amyloidosis:</strong> Secondary AA amyloidosis causing renal failure.
+            </div>
+        </div>
+
+        <div class="sub-question">
+            <span class="q-text">d) Primary prevention of Ischemic heart disease.</span>
+            <button class="btn-show" onclick="toggleAnswer('ans8d', this)">Show Answer</button>
+            <div id="ans8d" class="answer-box">
+                Prevention of first event in at-risk individuals:
+                <ul>
+                    <li><strong>Lifestyle (Key):</strong> Smoking Cessation (Most effective). Diet (Mediterranean, low salt/sat fat). Exercise (150min/week). Weight control (BMI <25).</li>
+                    <li><strong>Risk Factor Control:</strong>
+                        <br>- HTN: BP < 130/80.
+                        <br>- Lipids: Statins if high CV risk score.
+                        <br>- Diabetes: HbA1c < 7%.</li>
+                    <li><strong>Aspirin:</strong> Generally NOT used for primary prevention anymore unless risk is very high and bleeding risk is low.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleAnswer(id, btn) {
+            var x = document.getElementById(id);
+            if (x.style.display === "block") {
+                x.style.display = "none";
+                btn.textContent = "Show Answer";
+                btn.style.backgroundColor = "#3498db";
+            } else {
+                x.style.display = "block";
+                btn.textContent = "Hide Answer";
+                btn.style.backgroundColor = "#e74c3c";
+            }
+        }
+    </script>
+
+</body>
+</html>
